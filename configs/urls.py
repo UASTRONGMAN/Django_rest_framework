@@ -20,5 +20,5 @@ from users_app.views import UsersApp, UsersAppRetrive
 
 urlpatterns = [
     path('users_app', UsersApp.as_view(), name='users_app'),
-    path('users_app/<int:pk>', UsersApp.as_view(), name='second'),
+    path('users_app/<int:pk>', UsersAppRetrive.as_view(), name='second'),
 ]
